@@ -1,8 +1,13 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
 #Insertion Sort ---- Non-descending order
 def insertion_sort(A):
+	'''input:
+			A : a list of integers
+	   output:
+			a sorted list with non-descending order
+			'''
 	for j in xrange(1,len(A)):
 		key = A[j]
 		i = j - 1							#insert A[j] into sorted sequence A[1...j-1]
